@@ -1,0 +1,384 @@
+{
+  "project_info": {
+    "title": "العنوان الرئيسي",
+    "created": 1771112818.246242,
+    "last_updated": 1772150357.237449,
+    "total_slides": 31
+  },
+  "slides": [
+    {
+      "id": "slide_01_title",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_02_agenda",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_03_intro",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_04_rkc_standards",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_05_wto_safe",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "slide_06_key_concepts",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "slide_07_maturity_model",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "slide_08_org_structure",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "slide_09_raci_matrix",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "slide_10_legal_framework",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "slide_11_data_privacy",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "slide_12_ethics_fairness",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "slide_13_green_channel",
+      "state": "edited",
+      "pageNum": 13
+    },
+    {
+      "id": "slide_14_yellow_channel",
+      "state": "edited",
+      "pageNum": 14
+    },
+    {
+      "id": "slide_15_red_channel",
+      "state": "edited",
+      "pageNum": 15
+    },
+    {
+      "id": "slide_15_blue_channel",
+      "state": "edited",
+      "pageNum": 16
+    },
+    {
+      "id": "slide_16_data_sources",
+      "state": "edited",
+      "pageNum": 17
+    },
+    {
+      "id": "slide_17_data_quality",
+      "state": "edited",
+      "pageNum": 18
+    },
+    {
+      "id": "slide_18_data_lifecycle",
+      "state": "edited",
+      "pageNum": 19
+    },
+    {
+      "id": "slide_19_scoring_logic",
+      "state": "edited",
+      "pageNum": 20
+    },
+    {
+      "id": "slide_20_profiling_steps",
+      "state": "edited",
+      "pageNum": 21
+    },
+    {
+      "id": "slide_21_pca_integration",
+      "state": "edited",
+      "pageNum": 22
+    },
+    {
+      "id": "slide_22_daily_ops",
+      "state": "edited",
+      "pageNum": 23
+    },
+    {
+      "id": "slide_23_feedback_loop",
+      "state": "edited",
+      "pageNum": 24
+    },
+    {
+      "id": "slide_24_kpis_metrics",
+      "state": "edited",
+      "pageNum": 25
+    },
+    {
+      "id": "slide_25_continuous_improvement",
+      "state": "edited",
+      "pageNum": 26
+    },
+    {
+      "id": "slide_26_capacity_building",
+      "state": "edited",
+      "pageNum": 27
+    },
+    {
+      "id": "slide_27_interagency_coop",
+      "state": "edited",
+      "pageNum": 28
+    },
+    {
+      "id": "slide_28_implementation_timeline",
+      "state": "edited",
+      "pageNum": 29
+    },
+    {
+      "id": "slide_29_challenges_solutions",
+      "state": "edited",
+      "pageNum": 30
+    },
+    {
+      "id": "slide_30_conclusion_next_steps",
+      "state": "edited",
+      "pageNum": 31
+    }
+  ],
+  "outline": [
+    {
+      "id": "slide_01_title",
+      "title": "العنوان الرئيسي",
+      "summary": "شريحة عنوان احترافية تعكس أهمية النظام.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_02_agenda",
+      "title": "جدول المحتويات والجدول الزمني",
+      "summary": "عرض خارطة الطريق للعرض التقديمي والجدول الزمني للمواضيع.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_03_intro",
+      "title": "المقدمة والأهداف الاستراتيجية",
+      "summary": "توضيح أهمية النظام في الموازنة بين التسهيل والرقابة.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_04_rkc_standards",
+      "title": "المرجعيات الدولية: اتفاقية كيوتو (RKC)",
+      "summary": "شرح المعايير الدولية لإدارة المخاطر الجمركية.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_05_wto_safe",
+      "title": "اتفاقية WTO TFA وإطار SAFE",
+      "summary": "توضيح الالتزامات الدولية في تسهيل التجارة وأمنها.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_06_key_concepts",
+      "title": "المفاهيم الأساسية في إدارة المخاطر",
+      "summary": "تعريف المصطلحات الجوهرية (التقييم، التوصيف، الاستهداف).",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_07_maturity_model",
+      "title": "نموذج نضج إدارة المخاطر الجمركية",
+      "summary": "رسم بياني يوضح مستويات التطور من 1 إلى 5.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_08_org_structure",
+      "title": "الهيكل التنظيمي والوحدات الوظيفية",
+      "summary": "توضيح الأدوار (وحدة المخاطر، مركز الاستهداف، اللجنة).",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_09_raci_matrix",
+      "title": "مصفوفة المسؤوليات (RACI) التفصيلية",
+      "summary": "تحديد المسؤوليات لكل عملية في النظام.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_10_legal_framework",
+      "title": "الإطار التشريعي وصلاحيات النظام",
+      "summary": "الأساس القانوني لعمليات الاستهداف والرقابة.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_11_data_privacy",
+      "title": "حماية البيانات وسياسة الخصوصية",
+      "summary": "كيفية التعامل مع البيانات الحساسة وتصنيفها.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_12_ethics_fairness",
+      "title": "أخلاقيات العمل وعدم التمييز",
+      "summary": "ضمان العدالة والموضوعية في قرارات الاستهداف.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_13_green_channel",
+      "title": "القناة الخضراء: مسار التسهيل المباشر",
+      "summary": "المعايير والإجراءات الخاصة بالشحنات منخفضة المخاطر.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_14_yellow_channel",
+      "title": "القناة الصفراء: التدقيق المستندي",
+      "summary": "متى وكيف يتم التدقيق في المستندات دون فحص فعلي.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_15_red_channel",
+      "title": "القناة الحمراء: الفحص الفعلي والمعاينة",
+      "summary": "إجراءات التعامل مع الشحنات عالية الخطورة.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_15_blue_channel",
+      "title": "المسار الأزرق: التدقيق اللاحق (PCA) والامتثال المستمر",
+      "summary": "شرح المسار الأزرق ودوره في التحقق من الامتثال بعد الإفراج عن البضائع من خلال التدقيق اللاحق.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_16_data_sources",
+      "title": "مصادر البيانات وتكامل الأنظمة",
+      "summary": "تحديد مصادر البيانات الداخلية والخارجية اللازمة لتحليل المخاطر.",
+      "image_plan": "رسم تخطيطي لتدفق البيانات من المصادر إلى محرك المخاطر.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_17_data_quality",
+      "title": "معايير جودة البيانات الجمركية",
+      "summary": "أهمية جودة البيانات في دقة نتائج الاستهداف.",
+      "image_plan": "أيقونات تمثل الدقة، الاكتمال، والتوقيت.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_18_data_lifecycle",
+      "title": "دورة حياة تحليل البيانات",
+      "summary": "مراحل معالجة البيانات من الجمع إلى اتخاذ القرار.",
+      "image_plan": "رسم توضيحي لعملية تنظيف وتحليل البيانات.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_19_scoring_logic",
+      "title": "منهجية نظام النقاط (Scoring)",
+      "summary": "شرح كيفية توزيع الأوزان والنقاط على معايير المخاطر.",
+      "image_plan": "رسم تخطيطي يوضح كيفية حساب النقاط لكل معيار.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_20_profiling_steps",
+      "title": "بناء ملفات المخاطر (Profiling)",
+      "summary": "خطوات إنشاء وتحديث ملفات المخاطر بناءً على الأنماط المرصودة.",
+      "image_plan": "أمثلة لملفات مخاطر (Profiles) مختلفة.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_21_pca_integration",
+      "title": "التكامل مع التدقيق اللاحق (PCA)",
+      "summary": "كيفية تحويل نتائج المخاطر إلى خطط تدقيق لاحق.",
+      "image_plan": "رسم يوضح العلاقة بين إدارة المخاطر والتدقيق اللاحق.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_22_daily_ops",
+      "title": "العمليات اليومية في مركز الاستهداف",
+      "summary": "سير العمل اليومي لمحللي المخاطر وضباط الاستهداف.",
+      "image_plan": "أيقونات تمثل العمليات اليومية في مركز الاستهداف.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_23_feedback_loop",
+      "title": "نظام التغذية الراجعة (Feedback Loop)",
+      "summary": "أهمية تقارير المعاينة في تحسين دقة محرك المخاطر.",
+      "image_plan": "رسم توضيحي لآلية التغذية الراجعة من المنافذ.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_24_kpis_metrics",
+      "title": "مؤشرات أداء نظام المخاطر (KPIs)",
+      "summary": "قياس فعالية الاستهداف ونسبة الضبطيات.",
+      "image_plan": "لوحة قياس (Dashboard) توضح مؤشرات الأداء.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_25_continuous_improvement",
+      "title": "التحسين المستمر وتقييم الفعالية",
+      "summary": "آليات تحديث النظام بناءً على المتغيرات الجديدة.",
+      "image_plan": "رسم يوضح دورة التحسين المستمر (PDCA).",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_26_capacity_building",
+      "title": "التدريب وبناء القدرات البشرية",
+      "summary": "تأهيل الكوادر البشرية للتعامل مع أنظمة المخاطر الحديثة.",
+      "image_plan": "أيقونات تمثل التدريب وبناء القدرات.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_27_interagency_coop",
+      "title": "التعاون والتنسيق بين الجهات (IBM)",
+      "summary": "تكامل إدارة المخاطر على المستوى الوطني.",
+      "image_plan": "رسم يوضح التعاون مع الجهات الحكومية الأخرى.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_28_implementation_timeline",
+      "title": "الجدول الزمني لتنفيذ المشروع (12 شهر)",
+      "summary": "خطة زمنية مقسمة لمراحل التنفيذ والتشغيل.",
+      "image_plan": "جدول زمني مفصل (Gantt Chart) لمدة 12 شهراً.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_29_challenges_solutions",
+      "title": "التحديات وحلول التنفيذ",
+      "summary": "تحديد العقبات المحتملة وكيفية التغلب عليها.",
+      "image_plan": "أيقونات تمثل التحديات والحلول المقترحة.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_30_conclusion_next_steps",
+      "title": "الخاتمة والخطوات القادمة",
+      "summary": "ملخص العرض والتوجهات المستقبلية للنظام.",
+      "image_plan": "أيقونة شكر وختام.",
+      "slide_template_key": ""
+    }
+  ]
+}

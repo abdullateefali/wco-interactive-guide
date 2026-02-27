@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .integration-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .side-box {
+            width: 450px;
+            background-color: #FFFFFF;
+            border-top: 12px solid #1E3A8A;
+            padding: 30px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .pca-box { border-top-color: #B45309; }
+        .box-icon {
+            font-size: 60px;
+            color: #1E3A8A;
+            margin-bottom: 20px;
+        }
+        .pca-box .box-icon { color: #B45309; }
+        .box-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 20px;
+        }
+        .box-list {
+            text-align: right;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .box-list div { margin-bottom: 10px; display: flex; gap: 10px; }
+        .box-list i { margin-top: 8px; font-size: 14px; color: #3B82F6; }
+
+        .center-arrow {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        .arrow-icon {
+            font-size: 40px;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>التكامل مع التدقيق اللاحق (PCA)</h2>
+        </div>
+        <div class="integration-container">
+            <div class="side-box">
+                <div class="box-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="box-title">إدارة المخاطر</div>
+                <div class="box-list">
+                    <div><i class="fas fa-circle"></i> استهداف لحظي عند الحدود.</div>
+                    <div><i class="fas fa-circle"></i> تحديد الشحنات عالية الخطورة.</div>
+                    <div><i class="fas fa-circle"></i> جمع البيانات الأولية للمتعاملين.</div>
+                </div>
+            </div>
+            
+            <div class="center-arrow">
+                <i class="fas fa-exchange-alt arrow-icon"></i>
+                <div style="text-align: center; font-size: 20px; font-weight: 900; color: #1E3A8A;">تبادل المعلومات والنتائج</div>
+                <i class="fas fa-sync arrow-icon"></i>
+            </div>
+
+            <div class="side-box pca-box">
+                <div class="box-icon"><i class="fas fa-file-contract"></i></div>
+                <div class="box-title">التدقيق اللاحق (PCA)</div>
+                <div class="box-list">
+                    <div><i class="fas fa-circle"></i> مراجعة السجلات في مقر الشركة.</div>
+                    <div><i class="fas fa-circle"></i> التحقق من الامتثال طويل الأمد.</div>
+                    <div><i class="fas fa-circle"></i> تحديث ملفات المخاطر بالنتائج.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

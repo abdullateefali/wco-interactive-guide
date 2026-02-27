@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .training-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .training-card {
+            background-color: #FFFFFF;
+            border-top: 10px solid #1E3A8A;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            min-height: 220px;
+        }
+        .card-icon {
+            font-size: 60px;
+            color: #B45309;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 15px;
+        }
+        .card-desc {
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>التدريب وبناء القدرات البشرية</h2>
+        </div>
+        <div class="training-grid">
+            <div class="training-card">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="card-content">
+                    <div class="card-title">تحليل البيانات المتقدم</div>
+                    <div class="card-desc">تدريب المحللين على استخدام الأدوات الإحصائية والذكاء الاصطناعي لتحديد أنماط التهريب.</div>
+                </div>
+            </div>
+            <div class="training-card">
+                <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                <div class="card-content">
+                    <div class="card-title">بناء ملفات المخاطر</div>
+                    <div class="card-desc">تأهيل الكوادر على صياغة قواعد الاستهداف وتحويل المعلومات الاستخباراتية إلى معايير رقمية.</div>
+                </div>
+            </div>
+            <div class="training-card">
+                <div class="card-icon"><i class="fas fa-search-plus"></i></div>
+                <div class="card-content">
+                    <div class="card-title">تقنيات الفحص الحديثة</div>
+                    <div class="card-desc">تدريب ضباط المنافذ على استخدام أجهزة الأشعة وتقنيات المعاينة الفعالة للبضائع المستهدفة.</div>
+                </div>
+            </div>
+            <div class="training-card">
+                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                <div class="card-content">
+                    <div class="card-title">الأخلاقيات والنزاهة</div>
+                    <div class="card-desc">تعزيز قيم الموضوعية والعدالة في اتخاذ قرارات الاستهداف وضمان الامتثال للمعايير المهنية.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

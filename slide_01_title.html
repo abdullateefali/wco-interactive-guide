@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #1E3A8A 0%, #1e293b 100%);
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        /* Decorative Elements */
+        .bg-accent {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+        }
+        .bg-accent-2 {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 50%;
+        }
+
+        .content-box {
+            z-index: 10;
+            max-width: 1000px;
+            padding: 40px;
+            border-top: 5px solid #D4AF37;
+            border-bottom: 5px solid #D4AF37;
+        }
+
+        .main-title {
+            font-size: 64px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 32px;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #E2E8F0;
+            margin-bottom: 50px;
+            padding: 0 60px;
+        }
+
+        .footer-info {
+            display: flex;
+            gap: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 30px;
+            justify-content: center;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-item i {
+            color: #D4AF37;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bg-accent"></div>
+        <div class="bg-accent-2"></div>
+        
+        <div class="content-box">
+            <h1 class="main-title">دليل نظام تصنيف مخاطر البضائع (WCO)</h1>
+            <div class="subtitle">إصدار 2026 التفاعلي: تعزيز الرقابة وتسهيل التجارة</div>
+            
+            <p class="description">
+                دليل متكامل مصمم لدعم وحدات إدارة المخاطر ومراكز الاستهداف والقيادات الجمركية في بناء وتشغيل نظام منهجي لتصنيف المخاطر، وتحويلها إلى مسارات رقابة فعالة تضمن أمن المنافذ وحماية الإيرادات.
+            </p>
+
+            <div class="footer-info">
+                <div class="footer-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>خارطة الطريق الاستراتيجية</span>
+                </div>
+                <div class="footer-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>الجدول الزمني المقترح للتنفيذ</span>
+                </div>
+                <div class="footer-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>منظمة الجمارك العالمية (WCO)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

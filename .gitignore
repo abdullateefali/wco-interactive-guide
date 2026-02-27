@@ -1,0 +1,32 @@
+# ملفات النظام
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ملفات المحرر
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ملفات التطوير
+node_modules/
+dist/
+build/
+*.log
+
+# ملفات مؤقتة
+*.tmp
+*.temp
+.cache/
+
+# ملفات البيئة
+.env
+.env.local
+.env.*.local
+
+# ملفات النسخ الاحتياطية
+*.bak
+*.backup

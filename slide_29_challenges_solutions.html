@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .challenges-container {
+            display: flex;
+            flex-direction: column;
+            padding-right: 60px;
+            padding-left: 60px;
+            gap: 20px;
+            flex: 1;
+        }
+        .challenge-row {
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            min-height: 140px;
+        }
+        .challenge-box {
+            background-color: #FEE2E2;
+            border-right: 10px solid #DC2626;
+            color: #991B1B;
+        }
+        .solution-box {
+            background-color: #ECFDF5;
+            border-right: 10px solid #10B981;
+            color: #065F46;
+        }
+        .box-icon { font-size: 40px; }
+        .box-text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .box-label {
+            font-size: 18px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>التحديات وحلول التنفيذ</h2>
+        </div>
+        <div class="challenges-container">
+            <div class="challenge-row">
+                <div class="box challenge-box">
+                    <div class="box-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">التحدي: جودة البيانات</span>
+                        بيانات غير مكتملة أو غير دقيقة تعيق دقة الاستهداف الآلي.
+                    </div>
+                </div>
+                <div class="box solution-box">
+                    <div class="box-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">الحل المقترح</span>
+                        تفعيل أدوات التحقق الآلي عند الإدخال وتطبيق معايير جودة صارمة.
+                    </div>
+                </div>
+            </div>
+            <div class="challenge-row">
+                <div class="box challenge-box">
+                    <div class="box-icon"><i class="fas fa-users-slash"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">التحدي: مقاومة التغيير</span>
+                        تفضيل الكوادر البشرية للفحص اليدوي التقليدي على النظام الآلي.
+                    </div>
+                </div>
+                <div class="box solution-box">
+                    <div class="box-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">الحل المقترح</span>
+                        برامج تدريبية مكثفة وتوضيح فوائد النظام في تقليل الجهد وزيادة الدقة.
+                    </div>
+                </div>
+            </div>
+            <div class="challenge-row">
+                <div class="box challenge-box">
+                    <div class="box-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">التحدي: تكامل الأنظمة</span>
+                        صعوبة ربط الأنظمة القديمة (Legacy Systems) بمحرك المخاطر الحديث.
+                    </div>
+                </div>
+                <div class="box solution-box">
+                    <div class="box-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="box-text">
+                        <span class="box-label">الحل المقترح</span>
+                        استخدام واجهات برمجة التطبيقات (APIs) والأنظمة الوسيطة لضمان الربط السلس.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Left Identity Panel */
+        .identity-panel {
+            width: 400px;
+            background-color: #DC2626;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* reduced to save vertical space */
+            border-left: 15px solid #991B1B;
+        }
+        .panel-icon {
+            font-size: 140px;
+            margin-bottom: 10px; /* reduced */
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+        }
+        .panel-title {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 10px; /* reduced */
+            text-align: center;
+            line-height: 1.2;
+        }
+        .risk-badge {
+            background-color: #FFFFFF;
+            color: #DC2626;
+            padding: 10px 30px;
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Right Content Area */
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px; /* reduced to help overall height */
+        }
+        .header-section {
+            margin-bottom: 50px; /* keep header spacing (do not shrink upper padding of the title) */
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #DC2626;
+            padding-right: 25px;
+        }
+        
+        /* details arranged side-by-side to reduce vertical stacking */
+        .details-grid {
+            display: flex;
+            flex-direction: row; /* switched from column */
+            gap: 30px;
+            flex: 1;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .detail-card {
+            background-color: #FFFFFF;
+            padding: 20px; /* reduced */
+            border-top: 10px solid #1E3A8A;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1 1 calc(50% - 15px); /* two columns */
+            min-width: 300px;
+        }
+        .card-header {
+            font-size: 32px;
+            font-weight: 900;
+            color: #1E3A8A;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .card-header i { color: #DC2626; font-size: 36px; }
+        
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* slightly reduced */
+        }
+        .list-item {
+            font-size: 24px;
+            font-weight: 700;
+            color: #334155;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            line-height: 1.5;
+        }
+        .list-item i { 
+            margin-top: 8px; 
+            font-size: 18px; 
+            color: #DC2626; 
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Left Identity Panel -->
+        <div class="identity-panel">
+            <div class="panel-icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <div class="panel-title">المسار الحمراء</div>
+            <div class="risk-badge">مخاطر مرتفعة</div>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="content-area">
+            <div class="header-section">
+                <h2>الفحص الفعلي والمعاينة الميدانية</h2>
+            </div>
+            
+            <div class="details-grid">
+                <!-- Box 1: Risk Indicators -->
+                <div class="detail-card">
+                    <div class="card-header">
+                        <i class="fas fa-search-plus"></i>
+                        <span>مؤشرات الخطورة</span>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>سلع حساسة (أمنية، صحية، أو عالية القيمة الضريبية).</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>مسارات شحن مشبوهة أو دول ذات تصنيف مخاطر مرتفع.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تنبيهات استخباراتية وبلاغات مؤكدة من جهات أمنية.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2: Inspection Procedures -->
+                <div class="detail-card">
+                    <div class="card-header">
+                        <i class="fas fa-microscope"></i>
+                        <span>إجراءات الفحص والرقابة</span>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>المعاينة الفعلية الكلية أو الجزئية لمحتويات الشحنة.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>سحب عينات للفحص المخبري للتحقق من طبيعة المادة.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>التوثيق الرقمي لنتائج الفحص والمخالفات المرصودة.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

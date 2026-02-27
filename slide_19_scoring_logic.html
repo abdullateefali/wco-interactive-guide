@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px; /* must keep title top padding */
+            padding-right: 40px; /* reduced side padding to tighten layout */
+            margin-bottom: 10px; /* reduced from 30px to save vertical space */
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .table-container {
+            padding-right: 40px; /* reduced horizontal padding */
+            padding-left: 40px;
+            flex: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+        th {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            font-size: 26px;
+            font-weight: 900;
+            padding: 12px; /* reduced from 20px */
+            text-align: center;
+            border: 1px solid #E2E8F0;
+        }
+        td {
+            padding: 10px; /* reduced from 18px */
+            font-size: 24px; /* must not change */
+            font-weight: 700;
+            color: #1F2937;
+            border: 1px solid #E2E8F0;
+            text-align: center;
+        }
+        .criterion-col {
+            text-align: right;
+            background-color: #F1F5F9;
+            width: 520px; /* increased to reduce wrapping and row height */
+            color: #1E3A8A;
+            padding-right: 16px; /* reduced from 30px */
+        }
+        .weight-badge {
+            background-color: #B45309;
+            color: #FFFFFF;
+            padding: 4px 12px; /* slightly reduced */
+            font-weight: 900;
+        }
+        .total-row {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+        }
+        .total-row td {
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>منهجية نظام النقاط (Scoring Logic)</h2>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="criterion-col">معيار المخاطر</th>
+                        <th>الوزن النسبي (%)</th>
+                        <th>نطاق النقاط</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="criterion-col">تاريخ امتثال المتعامل (Trader History)</td>
+                        <td><span class="weight-badge">30%</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-col">نوع السلعة وخطورتها (Commodity Risk)</td>
+                        <td><span class="weight-badge">25%</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-col">بلد المنشأ والمسار (Origin/Route)</td>
+                        <td><span class="weight-badge">20%</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-col">اتساق القيمة والوزن (Value/Weight)</td>
+                        <td><span class="weight-badge">15%</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                    <tr>
+                        <td class="criterion-col">تنبيهات الاستخبارات (Intelligence)</td>
+                        <td><span class="weight-badge">10%</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td class="criterion-col" style="background-color: #1E3A8A; color: #FFFFFF;">المجموع الكلي</td>
+                        <td>100%</td>
+                        <td>النتيجة النهائية</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

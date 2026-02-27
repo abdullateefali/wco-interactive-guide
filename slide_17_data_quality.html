@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px; /* must not change */
+            padding-right: 60px;
+            margin-bottom: 28px; /* reduced from 40px to save height */
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .pillars-container {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 60px;
+            padding-left: 60px;
+            gap: 30px;
+            flex: 1;
+        }
+        .pillar {
+            flex: 1;
+            background-color: #FFFFFF;
+            border-top: 15px solid #1E3A8A;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 30px; /* reduced vertical padding */
+            text-align: center;
+            min-height: 420px; /* slightly reduced to help layout */
+        }
+        .pillar-icon {
+            font-size: 70px;
+            color: #B45309;
+            margin-bottom: 12px; /* reduced */
+        }
+        .pillar-title {
+            font-size: 36px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 12px; /* reduced */
+        }
+        .pillar-list {
+            text-align: right;
+            width: 100%;
+            font-size: 24px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.45; /* tightened */
+        }
+        .pillar-list div {
+            margin-bottom: 10px; /* reduced */
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .pillar-list i {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>معايير جودة البيانات الجمركية</h2>
+        </div>
+        <div class="pillars-container">
+            <div class="pillar">
+                <div class="pillar-icon"><i class="fas fa-bullseye"></i></div>
+                <div class="pillar-title">الدقة (Accuracy)</div>
+                <div class="pillar-list">
+                    <div><i class="fas fa-check"></i> التصنيف الجمركي الصحيح (HS Code).</div>
+                    <div><i class="fas fa-check"></i> القيمة الحقيقية للبضائع دون تلاعب.</div>
+                    <div><i class="fas fa-check"></i> بلد المنشأ والوجهة النهائية بدقة.</div>
+                </div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon"><i class="fas fa-fill-drip"></i></div>
+                <div class="pillar-title">الاكتمال (Completeness)</div>
+                <div class="pillar-list">
+                    <div><i class="fas fa-check"></i> تعبئة كافة الحقول الإلزامية في البيان.</div>
+                    <div><i class="fas fa-check"></i> إرفاق كافة المستندات الثبوتية اللازمة.</div>
+                    <div><i class="fas fa-check"></i> وصف دقيق وتفصيلي لمحتويات الشحنة.</div>
+                </div>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon"><i class="fas fa-clock"></i></div>
+                <div class="pillar-title">التوقيت (Timeliness)</div>
+                <div class="pillar-list">
+                    <div><i class="fas fa-check"></i> تقديم البيانات قبل وصول الشحنة (Pre-arrival).</div>
+                    <div><i class="fas fa-check"></i> التحديث الفوري لأي تغييرات في البيانات.</div>
+                    <div><i class="fas fa-check"></i> سرعة الاستجابة لطلبات التوضيح الإضافية.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

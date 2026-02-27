@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+            gap: 20px;
+        }
+        .quarter-row {
+            display: flex;
+            align-items: stretch;
+            background-color: #FFFFFF;
+            border-right: 15px solid #1E3A8A;
+            min-height: 120px;
+        }
+        .q2 { border-right-color: #3B82F6; }
+        .q3 { border-right-color: #B45309; }
+        .q4 { border-right-color: #10B981; }
+
+        .quarter-label {
+            width: 150px;
+            background-color: #F1F5F9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-left: 2px solid #E2E8F0;
+        }
+        .milestones {
+            flex: 1;
+            padding: 15px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .milestone-item {
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .milestone-item i { color: #3B82F6; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>الجدول الزمني لتنفيذ المشروع (12 شهر)</h2>
+        </div>
+        <div class="timeline-container">
+            <div class="quarter-row">
+                <div class="quarter-label">الربع الأول<span>(1-3)</span></div>
+                <div class="milestones">
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> مراجعة الإطار القانوني</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تحديد مصادر البيانات</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تشكيل فرق العمل</div>
+                </div>
+            </div>
+            <div class="quarter-row q2">
+                <div class="quarter-label">الربع الثاني<span>(4-6)</span></div>
+                <div class="milestones">
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تطوير محرك المخاطر</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> بناء ملفات الاستهداف</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تكامل الأنظمة التقنية</div>
+                </div>
+            </div>
+            <div class="quarter-row q3">
+                <div class="quarter-label">الربع الثالث<span>(7-9)</span></div>
+                <div class="milestones">
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تدريب الكوادر البشرية</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> إطلاق المرحلة التجريبية</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> تقييم النتائج الأولية</div>
+                </div>
+            </div>
+            <div class="quarter-row q4">
+                <div class="quarter-label">الربع الرابع<span>(10-12)</span></div>
+                <div class="milestones">
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> التشغيل الكامل للنظام</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> مراقبة مؤشرات الأداء</div>
+                    <div class="milestone-item"><i class="fas fa-check-circle"></i> التحسين المستمر</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

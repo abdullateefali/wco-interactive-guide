@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .intro-grid {
+            display: flex;
+            gap: 40px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .info-box {
+            flex: 1;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-top: 10px solid #1E3A8A;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .goal-box {
+            flex: 1;
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            padding: 30px;
+            border-top: 10px solid #B45309;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box-title {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .info-box .box-title { color: #1E3A8A; }
+        .goal-box .box-title { color: #B45309; }
+        
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        .list-item i {
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        .info-box .list-item i { color: #B45309; }
+        .goal-box .list-item i { color: #3B82F6; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>المقدمة والأهداف الاستراتيجية</h2>
+        </div>
+        <div class="intro-grid">
+            <div class="info-box">
+                <div class="box-title">
+                    <i class="fas fa-question-circle"></i>
+                    لماذا نحتاج لهذا النظام؟
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check"></i>
+                    <span>تحسين تخصيص الموارد المحدودة للجمارك.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check"></i>
+                    <span>مواجهة التهديدات الأمنية المتزايدة.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check"></i>
+                    <span>حماية الإيرادات الجمركية من التهرب.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check"></i>
+                    <span>الاستجابة لمتطلبات التجارة العالمية السريعة.</span>
+                </div>
+            </div>
+            <div class="goal-box">
+                <div class="box-title">
+                    <i class="fas fa-bullseye"></i>
+                    الأهداف الاستراتيجية
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-star"></i>
+                    <span>تسهيل عبور الشحنات منخفضة المخاطر.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-star"></i>
+                    <span>تركيز الرقابة على الشحنات عالية الخطورة.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-star"></i>
+                    <span>تحقيق التوازن بين الرقابة وتسهيل التجارة.</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-star"></i>
+                    <span>تعزيز الامتثال الطوعي للتجار والمستوردين.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

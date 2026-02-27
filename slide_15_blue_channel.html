@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Left Identity Panel */
+        .identity-panel {
+            width: 400px;
+            background-color: #2563EB;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-left: 15px solid #1E40AF;
+        }
+        .panel-icon {
+            font-size: 140px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+        }
+        .panel-title {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .risk-badge {
+            background-color: #FFFFFF;
+            color: #2563EB;
+            padding: 10px 30px;
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Right Content Area */
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+        .header-section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #2563EB;
+            padding-right: 25px;
+        }
+        
+        .details-grid {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex: 1;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .detail-card {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-top: 10px solid #1E3A8A;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1 1 calc(50% - 15px);
+            min-width: 300px;
+        }
+        .card-header {
+            font-size: 32px;
+            font-weight: 900;
+            color: #1E3A8A;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .card-header i { color: #2563EB; font-size: 36px; }
+        
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .list-item {
+            font-size: 24px;
+            font-weight: 700;
+            color: #334155;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            line-height: 1.5;
+        }
+        .list-item i { 
+            margin-top: 8px; 
+            font-size: 18px; 
+            color: #2563EB; 
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Left Identity Panel -->
+        <div class="identity-panel">
+            <div class="panel-icon"><i class="fas fa-file-invoice"></i></div>
+            <div class="panel-title">المسار الأزرق</div>
+            <div class="risk-badge">التدقيق اللاحق</div>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="content-area">
+            <div class="header-section">
+                <h2>التدقيق اللاحق (PCA) والامتثال المستمر</h2>
+            </div>
+            
+            <div class="details-grid">
+                <!-- Box 1: Objectives -->
+                <div class="detail-card">
+                    <div class="card-header">
+                        <i class="fas fa-bullseye"></i>
+                        <span>أهداف المسار الأزرق</span>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>التحقق من صحة البيانات الجمركية بعد الإفراج عن البضائع.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تسهيل التجارة من خلال تقليل التدخل عند الحدود.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ضمان تحصيل الرسوم الجمركية والضرائب بدقة.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2: Procedures -->
+                <div class="detail-card">
+                    <div class="card-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>إجراءات التدقيق</span>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>مراجعة السجلات التجارية والمستندات في مقر المتعامل.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تحليل نظم المحاسبة والمخزون لدى الشركات.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تحديث ملفات المخاطر بناءً على نتائج التدقيق.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

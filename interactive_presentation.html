@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل نظام تصنيف مخاطر البضائع (WCO) - عرض تفاعلي صوتي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .presentation-container {
+            width: 100%;
+            max-width: 1400px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .slide-viewer {
+            width: 100%;
+            height: 720px;
+            background: #F8FAFC;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide-frame {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .slide-frame.active {
+            display: block;
+        }
+        .slide-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .controls-bar {
+            background: #1E3A8A;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .slide-info {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .audio-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .btn {
+            background: #B45309;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn:hover {
+            background: #D97706;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(180, 83, 9, 0.4);
+        }
+        .btn:disabled {
+            background: #9CA3AF;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .btn-small {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+        .progress-bar {
+            flex: 1;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            min-width: 200px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #B45309;
+            transition: width 0.3s ease;
+        }
+        .audio-player {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+        .audio-player audio {
+            max-width: 200px;
+        }
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .volume-control input {
+            width: 100px;
+        }
+        .time-display {
+            font-size: 12px;
+            min-width: 100px;
+            text-align: center;
+        }
+        .navigation-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .slide-counter {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #10B981;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .keyboard-hints {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .fullscreen-btn {
+            background: #3B82F6;
+        }
+        .fullscreen-btn:hover {
+            background: #2563EB;
+        }
+        @media (max-width: 1024px) {
+            .slide-viewer {
+                height: 500px;
+            }
+            .controls-bar {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+            .btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide-viewer" id="slideViewer">
+            <div class="slide-frame active" id="slide1">
+                <iframe src="slide_01_title.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide2">
+                <iframe src="slide_02_agenda.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide3">
+                <iframe src="slide_03_intro.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide4">
+                <iframe src="slide_04_rkc_standards.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide5">
+                <iframe src="slide_05_wto_safe.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide6">
+                <iframe src="slide_06_key_concepts.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide7">
+                <iframe src="slide_07_maturity_model.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide8">
+                <iframe src="slide_08_org_structure.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide9">
+                <iframe src="slide_09_raci_matrix.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide10">
+                <iframe src="slide_10_legal_framework.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide11">
+                <iframe src="slide_11_data_privacy.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide12">
+                <iframe src="slide_12_ethics_fairness.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide13">
+                <iframe src="slide_13_green_channel.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide14">
+                <iframe src="slide_14_yellow_channel.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide15">
+                <iframe src="slide_15_red_channel.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide16">
+                <iframe src="slide_15_blue_channel.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide17">
+                <iframe src="slide_16_data_sources.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide18">
+                <iframe src="slide_17_data_quality.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide19">
+                <iframe src="slide_18_data_lifecycle.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide20">
+                <iframe src="slide_19_scoring_logic.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide21">
+                <iframe src="slide_20_profiling_steps.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide22">
+                <iframe src="slide_21_pca_integration.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide23">
+                <iframe src="slide_22_daily_ops.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide24">
+                <iframe src="slide_23_feedback_loop.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide25">
+                <iframe src="slide_24_kpis_metrics.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide26">
+                <iframe src="slide_25_continuous_improvement.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide27">
+                <iframe src="slide_26_capacity_building.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide28">
+                <iframe src="slide_27_interagency_coop.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide29">
+                <iframe src="slide_28_implementation_timeline.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide30">
+                <iframe src="slide_29_challenges_solutions.html"></iframe>
+            </div>
+            <div class="slide-frame" id="slide31">
+                <iframe src="slide_30_conclusion_next_steps.html"></iframe>
+            </div>
+        </div>
+
+        <div class="controls-bar">
+            <div class="slide-info">
+                <span class="status-indicator"></span> عرض تفاعلي صوتي
+            </div>
+
+            <div class="audio-controls">
+                <button class="btn btn-small" id="playBtn" title="تشغيل الصوت">
+                    <i class="fas fa-play"></i> تشغيل
+                </button>
+                <button class="btn btn-small" id="pauseBtn" title="إيقاف الصوت" disabled>
+                    <i class="fas fa-pause"></i> إيقاف
+                </button>
+                <button class="btn btn-small" id="stopBtn" title="إيقاف وإعادة تعيين">
+                    <i class="fas fa-stop"></i> إيقاف
+                </button>
+            </div>
+
+            <div class="audio-player">
+                <i class="fas fa-volume-up"></i>
+                <audio id="audioPlayer" controls style="max-width: 150px;">
+                    <source src="" type="audio/wav">
+                    متصفحك لا يدعم عنصر الصوت.
+                </audio>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn btn-small" id="prevBtn" title="الشريحة السابقة">
+                    <i class="fas fa-chevron-right"></i> السابق
+                </button>
+                <div class="slide-counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">31</span>
+                </div>
+                <button class="btn btn-small" id="nextBtn" title="الشريحة التالية">
+                    التالي <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <button class="btn fullscreen-btn btn-small" id="fullscreenBtn" title="ملء الشاشة">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const totalSlides = 31;
+        let currentSlide = 1;
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playBtn = document.getElementById('playBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const slideViewer = document.getElementById('slideViewer');
+        const currentSlideSpan = document.getElementById('currentSlide');
+        const progressFill = document.getElementById('progressFill');
+
+        // تحديث الشريحة الحالية
+        function updateSlide(slideNum) {
+            if (slideNum < 1 || slideNum > totalSlides) return;
+            
+            currentSlide = slideNum;
+            
+            // إخفاء جميع الشرائح
+            document.querySelectorAll('.slide-frame').forEach(frame => {
+                frame.classList.remove('active');
+            });
+            
+            // إظهار الشريحة الحالية
+            document.getElementById('slide' + currentSlide).classList.add('active');
+            
+            // تحديث رقم الشريحة
+            currentSlideSpan.textContent = currentSlide;
+            
+            // تحديث شريط التقدم
+            progressFill.style.width = ((currentSlide / totalSlides) * 100) + '%';
+            
+            // تحديث حالة الأزرار
+            prevBtn.disabled = currentSlide === 1;
+            nextBtn.disabled = currentSlide === totalSlides;
+            
+            // تحميل الملف الصوتي
+            loadAudio(currentSlide);
+        }
+
+        // تحميل الملف الصوتي
+        function loadAudio(slideNum) {
+            const slideNames = [
+                'slide_01_title', 'slide_02_agenda', 'slide_03_intro', 'slide_04_rkc_standards',
+                'slide_05_wto_safe', 'slide_06_key_concepts', 'slide_07_maturity_model', 'slide_08_org_structure',
+                'slide_09_raci_matrix', 'slide_10_legal_framework', 'slide_11_data_privacy', 'slide_12_ethics_fairness',
+                'slide_13_green_channel', 'slide_14_yellow_channel', 'slide_15_red_channel', 'slide_15_blue_channel',
+                'slide_16_data_sources', 'slide_17_data_quality', 'slide_18_data_lifecycle', 'slide_19_scoring_logic',
+                'slide_20_profiling_steps', 'slide_21_pca_integration', 'slide_22_daily_ops', 'slide_23_feedback_loop',
+                'slide_24_kpis_metrics', 'slide_25_continuous_improvement', 'slide_26_capacity_building', 'slide_27_interagency_coop',
+                'slide_28_implementation_timeline', 'slide_29_challenges_solutions', 'slide_30_conclusion_next_steps'
+            ];
+            
+            const audioPath = 'audio_files/' + slideNames[slideNum - 1] + '.wav';
+            audioPlayer.src = audioPath;
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+            pauseBtn.disabled = true;
+            playBtn.disabled = false;
+        }
+
+        // التحكم بالصوت
+        playBtn.addEventListener('click', () => {
+            audioPlayer.play();
+            playBtn.disabled = true;
+            pauseBtn.disabled = false;
+        });
+
+        pauseBtn.addEventListener('click', () => {
+            audioPlayer.pause();
+            playBtn.disabled = false;
+            pauseBtn.disabled = true;
+        });
+
+        stopBtn.addEventListener('click', () => {
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+            playBtn.disabled = false;
+            pauseBtn.disabled = true;
+        });
+
+        // التنقل بين الشرائح
+        prevBtn.addEventListener('click', () => {
+            updateSlide(currentSlide - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            updateSlide(currentSlide + 1);
+        });
+
+        // ملء الشاشة
+        fullscreenBtn.addEventListener('click', () => {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else {
+                slideViewer.requestFullscreen().catch(err => {
+                    alert('لا يمكن دخول وضع ملء الشاشة: ' + err.message);
+                });
+            }
+        });
+
+        // لوحة المفاتيح
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') updateSlide(currentSlide - 1);
+            if (e.key === 'ArrowLeft') updateSlide(currentSlide + 1);
+            if (e.key === ' ') {
+                e.preventDefault();
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    playBtn.disabled = true;
+                    pauseBtn.disabled = false;
+                } else {
+                    audioPlayer.pause();
+                    playBtn.disabled = false;
+                    pauseBtn.disabled = true;
+                }
+            }
+        });
+
+        // الانتقال التلقائي إلى الشريحة التالية عند انتهاء الصوت
+        audioPlayer.addEventListener('ended', () => {
+            if (currentSlide < totalSlides) {
+                setTimeout(() => {
+                    updateSlide(currentSlide + 1);
+                    audioPlayer.play();
+                }, 1000);
+            }
+        });
+
+        // تحديث حالة الأزرار عند تشغيل/إيقاف الصوت
+        audioPlayer.addEventListener('play', () => {
+            playBtn.disabled = true;
+            pauseBtn.disabled = false;
+        });
+
+        audioPlayer.addEventListener('pause', () => {
+            playBtn.disabled = false;
+            pauseBtn.disabled = true;
+        });
+
+        // تهيئة الصفحة
+        updateSlide(1);
+    </script>
+</body>
+</html>

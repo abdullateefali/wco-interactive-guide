@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .content-grid {
+            display: flex;
+            gap: 40px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .agenda-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .agenda-item {
+            background-color: #FFFFFF;
+            padding: 15px 20px;
+            border-right: 8px solid #1E3A8A;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1F2937;
+        }
+        .agenda-num {
+            font-size: 32px;
+            font-weight: 900;
+            color: #B45309;
+        }
+        .schedule-side {
+            flex: 1;
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            padding: 30px;
+            border-top: 10px solid #B45309;
+        }
+        h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #B45309;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        th, td {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 15px;
+            text-align: right;
+        }
+        th { background-color: rgba(255,255,255,0.05); color: #B45309; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>خارطة الطريق والجدول الزمني</h2>
+        </div>
+        <div class="content-grid">
+            <div class="agenda-list">
+                <div class="agenda-item">
+                    <span class="agenda-num">01</span>
+                    <span>التأسيس والمرجعيات الدولية</span>
+                </div>
+                <div class="agenda-item">
+                    <span class="agenda-num">02</span>
+                    <span>الحوكمة والنموذج التشغيلي</span>
+                </div>
+                <div class="agenda-item">
+                    <span class="agenda-num">03</span>
+                    <span>تصميم النظام ومسارات الانتقائية</span>
+                </div>
+                <div class="agenda-item">
+                    <span class="agenda-num">04</span>
+                    <span>إدارة البيانات وبناء ملفات المخاطر</span>
+                </div>
+                <div class="agenda-item">
+                    <span class="agenda-num">05</span>
+                    <span>التشغيل، التقييم، والتحسين المستمر</span>
+                </div>
+            </div>
+            <div class="schedule-side">
+                <h3>الجدول الزمني المقترح</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اليوم</th>
+                            <th>المواضيع الرئيسية</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>اليوم الأول</td>
+                            <td>التأسيس، المرجعيات، والحوكمة</td>
+                        </tr>
+                        <tr>
+                            <td>اليوم الثاني</td>
+                            <td>تصميم المسارات، البيانات، وبناء الملفات</td>
+                        </tr>
+                        <tr>
+                            <td>اليوم الثالث</td>
+                            <td>منهجيات التقييم، التشغيل، والتحسين</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 20px; font-size: 18px; color: #94A3B8;">* تم تصميم هذا العرض ليغطي 30 شريحة تفصيلية.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

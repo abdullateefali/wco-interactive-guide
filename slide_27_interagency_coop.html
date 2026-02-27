@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px; /* must not change */
+            padding-right: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .ibm-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 40px; /* reduced vertical padding to save height */
+            flex: 1;
+        }
+        .central-hub {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            padding: 18px 40px; /* slightly reduced */
+            font-size: 32px;
+            font-weight: 900;
+            border-bottom: 8px solid #B45309;
+            margin-bottom: 20px; /* reduced spacing under hub */
+            text-align: center;
+        }
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* smaller gaps between rows/cols */
+            width: 100%;
+        }
+        .partner-card {
+            background-color: #FFFFFF;
+            border-top: 8px solid #1E3A8A;
+            padding: 14px; /* slightly smaller padding */
+            text-align: center;
+            min-height: 120px; /* reduced from 180 to fit in 720 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .partner-icon {
+            font-size: 40px;
+            color: #B45309;
+            margin-bottom: 12px;
+        }
+        .partner-name {
+            font-size: 24px;
+            font-weight: 900;
+            color: #1E3A8A;
+        }
+        .benefit-bar {
+            margin-top: 10px; /* reduced */
+            background-color: #F1F5F9;
+            padding: 12px; /* reduced */
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            border-right: 10px solid #3B82F6;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>التعاون والتنسيق بين الجهات (IBM)</h2>
+        </div>
+        <div class="ibm-container">
+            <div class="central-hub">الإدارة المتكاملة للحدود (IBM)</div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-hospital-user"></i></div>
+                    <div class="partner-name">وزارة الصحة</div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="partner-name">الأجهزة الأمنية</div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="partner-name">وزارة البيئة</div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-check-double"></i></div>
+                    <div class="partner-name">هيئة المواصفات</div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-globe-americas"></i></div>
+                    <div class="partner-name">الجمارك الدولية</div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon"><i class="fas fa-university"></i></div>
+                    <div class="partner-name">البنك المركزي</div>
+                </div>
+            </div>
+            <div class="benefit-bar">
+                <span><i class="fas fa-share-alt"></i> تبادل استخباراتي</span>
+                <span><i class="fas fa-id-card-alt"></i> نافذة واحدة</span>
+                <span><i class="fas fa-lock"></i> أمن وطني معزز</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

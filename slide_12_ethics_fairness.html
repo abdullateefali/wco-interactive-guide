@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .ethics-grid {
+            display: flex;
+            gap: 40px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .ethics-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .ethics-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-top: 10px solid #1E3A8A;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .fairness-card {
+            border-top-color: #B45309;
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+        }
+        .card-icon {
+            font-size: 60px;
+            color: #B45309;
+            margin-bottom: 25px;
+        }
+        .fairness-card .card-icon { color: #3B82F6; }
+        
+        .card-title {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+        .ethics-card .card-title { color: #1E3A8A; }
+        .fairness-card .card-title { color: #B45309; }
+        
+        .list-container {
+            text-align: right;
+            width: 100%;
+        }
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .list-item i {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+        .ethics-card .list-item i { color: #B45309; }
+        .fairness-card .list-item i { color: #3B82F6; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>أخلاقيات العمل وعدم التمييز</h2>
+        </div>
+        <div class="ethics-grid">
+            <div class="ethics-column">
+                <div class="ethics-card">
+                    <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="card-title">الموضوعية والنزاهة</div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>بناء قرارات الاستهداف على بيانات وحقائق مثبتة بعيداً عن التحيز الشخصي.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تجنب استخدام معايير استهداف تعسفية أو غير مبررة اقتصادياً أو أمنياً.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>الالتزام بالشفافية في توضيح أسس تقييم المخاطر للمتعاملين الملتزمين.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ethics-column">
+                <div class="ethics-card fairness-card">
+                    <div class="card-icon"><i class="fas fa-user-check"></i></div>
+                    <div class="card-title">العدالة وعدم التمييز</div>
+                    <div class="list-container">
+                        <div class="list-item">
+                            <i class="fas fa-star"></i>
+                            <span>ضمان معاملة متساوية لجميع المتعاملين الذين يظهرون نفس مستوى الامتثال.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-star"></i>
+                            <span>منع التمييز القائم على الجنسية أو العرق أو أي معايير غير مهنية في الاستهداف.</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-star"></i>
+                            <span>تفعيل آليات المساءلة والمراجعة الدورية لقرارات الاستهداف لضمان عدالتها.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

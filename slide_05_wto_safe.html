@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .framework-grid {
+            display: flex;
+            gap: 40px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .framework-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .info-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-top: 10px solid #1E3A8A;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+        .safe-card {
+            border-top-color: #B45309;
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+        }
+        .card-title {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .info-card .card-title { color: #1E3A8A; }
+        .safe-card .card-title { color: #B45309; }
+        
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .list-item i {
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        .info-card .list-item i { color: #B45309; }
+        .safe-card .list-item i { color: #3B82F6; }
+        
+        .divider {
+            width: 2px;
+            background-color: #E2E8F0;
+            height: 80%;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>اتفاقية WTO TFA وإطار SAFE</h2>
+        </div>
+        <div class="framework-grid">
+            <div class="framework-column">
+                <div class="info-card">
+                    <div class="card-title">
+                        <i class="fas fa-handshake"></i>
+                        اتفاقية WTO TFA
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-file-contract"></i>
+                        <span><strong>المادة 7.4:</strong> الالتزام بتبني نظام إدارة مخاطر جمركي فعال.</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <span><strong>عدم التمييز:</strong> تجنب القيود غير المبررة على التجارة الدولية.</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span><strong>التسهيل:</strong> تسريع الإفراج عن الشحنات منخفضة المخاطر.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="framework-column">
+                <div class="info-card safe-card">
+                    <div class="card-title">
+                        <i class="fas fa-shield-alt"></i>
+                        إطار معايير SAFE
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-bullseye"></i>
+                        <span><strong>المعيار 5:</strong> استخدام تقنيات الاستهداف والتوصيف المتقدمة.</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span><strong>أمن السلسلة:</strong> حماية سلسلة الإمداد من التهديدات الإرهابية.</span>
+                    </div>
+                    <div class="list-item">
+                        <i class="fas fa-database"></i>
+                        <span><strong>البيانات المسبقة:</strong> الاعتماد على المعلومات الإلكترونية قبل الوصول.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

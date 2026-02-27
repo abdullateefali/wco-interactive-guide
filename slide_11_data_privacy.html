@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px; /* must not be shrunk */
+            padding-right: 60px;
+            margin-bottom: 20px; /* reduced from 40 to pull grid up */
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .privacy-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* reduced gap */
+            padding-right: 60px;
+            padding-left: 60px;
+            justify-content: center;
+            flex: 1;
+        }
+        .privacy-card {
+            width: 550px;
+            background-color: #FFFFFF;
+            border-top: 10px solid #1E3A8A;
+            padding: 18px; /* reduced padding */
+            display: flex;
+            gap: 18px; /* reduced gap */
+            min-height: 170px; /* reduced from 220 */
+        }
+        .card-icon {
+            font-size: 50px;
+            color: #B45309;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 10px; /* reduced spacing */
+        }
+        .card-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.5;
+        }
+        .classification-bar {
+            margin-top: 10px; /* reduced from 20 */
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            padding: 14px 60px; /* reduced vertical padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .class-item {
+            font-size: 24px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .class-item i { color: #B45309; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>حماية البيانات وسياسة الخصوصية</h2>
+        </div>
+        <div class="privacy-grid">
+            <div class="privacy-card">
+                <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                <div class="card-content">
+                    <div class="card-title">مبدأ المشروعية</div>
+                    <div class="card-text">جمع البيانات ومعالجتها فقط لأغراض محددة ومشروعة تتعلق بإدارة المخاطر والرقابة الجمركية.</div>
+                </div>
+            </div>
+            <div class="privacy-card">
+                <div class="card-icon"><i class="fas fa-key"></i></div>
+                <div class="card-content">
+                    <div class="card-title">التحكم في الوصول</div>
+                    <div class="card-text">تقييد صلاحيات الاطلاع على البيانات الحساسة بناءً على الدور الوظيفي (Role-based Access).</div>
+                </div>
+            </div>
+            <div class="privacy-card">
+                <div class="card-icon"><i class="fas fa-lock"></i></div>
+                <div class="card-content">
+                    <div class="card-title">أمن المعلومات</div>
+                    <div class="card-text">تشفير البيانات أثناء النقل والتخزين، مع وجود سجل تدقيق (Audit Trail) لكل عمليات الدخول.</div>
+                </div>
+            </div>
+            <div class="privacy-card">
+                <div class="card-icon"><i class="fas fa-history"></i></div>
+                <div class="card-content">
+                    <div class="card-title">سياسة الاحتفاظ</div>
+                    <div class="card-text">تحديد مدد زمنية واضحة للاحتفاظ بالبيانات الجمركية وآليات آمنة للأرشفة أو الإتلاف.</div>
+                </div>
+            </div>
+        </div>
+        <div class="classification-bar">
+            <div class="class-item"><i class="fas fa-circle"></i> سري للغاية</div>
+            <div class="class-item"><i class="fas fa-circle"></i> مقيد</div>
+            <div class="class-item"><i class="fas fa-circle"></i> للاستخدام الداخلي</div>
+            <div class="class-item"><i class="fas fa-circle"></i> متاح للعموم</div>
+        </div>
+    </div>
+</body>
+</html>

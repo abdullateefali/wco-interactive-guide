@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .table-container {
+            padding-right: 60px;
+            padding-left: 60px;
+            padding-top: 20px;
+            flex: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+        th {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 900;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #E2E8F0;
+        }
+        td {
+            padding: 18px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1F2937;
+            border: 1px solid #E2E8F0;
+            text-align: center;
+        }
+        .process-col {
+            text-align: right;
+            background-color: #F1F5F9;
+            width: 350px;
+            color: #1E3A8A;
+        }
+        .raci-indicator {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 50%;
+            font-weight: 900;
+            color: #FFFFFF;
+        }
+        .r { background-color: #3B82F6; } /* Responsible */
+        .a { background-color: #B45309; } /* Accountable */
+        .c { background-color: #10B981; } /* Consulted */
+        .i { background-color: #94A3B8; } /* Informed */
+.legend {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding-top: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #475569;
+        }
+        .legend-item { display: flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body><div class="slide-container">
+        <div class="header">
+            <h2>مصفوفة المسؤوليات (RACI) التفصيلية</h2>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="process-col">العملية / النشاط</th>
+                        <th>محلل المخاطر</th>
+                        <th>رئيس الوحدة</th>
+                        <th>لجنة المخاطر</th>
+                        <th>تقنية المعلومات</th>
+                        <th>المنافذ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="process-col">اقتراح ملف مخاطر جديد</td>
+                        <td><span class="raci-indicator r">R</span></td>
+                        <td><span class="raci-indicator a">A</span></td>
+                        <td><span class="raci-indicator c">C</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                        <td><span class="raci-indicator c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td class="process-col">اعتماد/تعديل قواعد المخاطر</td>
+                        <td><span class="raci-indicator c">C</span></td>
+                        <td><span class="raci-indicator r">R</span></td>
+                        <td><span class="raci-indicator a">A</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td class="process-col">مراجعة الأداء الشهري</td>
+                        <td><span class="raci-indicator r">R</span></td>
+                        <td><span class="raci-indicator a">A</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                        <td><span class="raci-indicator c">C</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td class="process-col">إدارة صلاحيات النظام</td>
+                        <td><span class="raci-indicator i">I</span></td>
+                        <td><span class="raci-indicator c">C</span></td>
+                        <td><span class="raci-indicator a">A</span></td>
+                        <td><span class="raci-indicator r">R</span></td>
+                        <td><span class="raci-indicator i">I</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="legend" style="transform: translate(-15.625px, 0px);">
+                <div class="legend-item"><span class="raci-indicator r" style="width:30px; height:30px; line-height:30px; font-size:14px;">R</span> المسؤول عن التنفيذ</div>
+                <div class="legend-item"><span class="raci-indicator a" style="width:30px; height:30px; line-height:30px; font-size:14px;">A</span> صاحب القرار النهائي</div>
+                <div class="legend-item"><span class="raci-indicator c" style="width:30px; height:30px; line-height:30px; font-size:14px;">C</span> المستشار المشارك</div>
+                <div class="legend-item"><span class="raci-indicator i" style="width:30px; height:30px; line-height:30px; font-size:14px;">I</span> المطلع على النتائج</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

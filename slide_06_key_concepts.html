@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .concepts-grid {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            flex: 1;
+        }
+        .concept-pillar {
+            width: 380px;
+            min-height: 450px;
+            background-color: #FFFFFF;
+            border-top: 12px solid #1E3A8A;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .icon-box {
+            width: 120px;
+            height: 120px;
+            background-color: #F1F5F9;
+            color: #B45309;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+        .concept-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 20px;
+        }
+        .concept-desc {
+            font-size: 24px;
+            font-weight: 700;
+            color: #4B5563;
+            padding-right: 25px;
+            padding-left: 25px;
+            line-height: 1.5;
+        }
+        .accent-bar {
+            width: 60px;
+            height: 6px;
+            background-color: #B45309;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>المفاهيم الأساسية في إدارة المخاطر</h2>
+        </div>
+        <div class="concepts-grid">
+            <div class="concept-pillar">
+                <div class="icon-box"><i class="fas fa-microscope"></i></div>
+                <div class="concept-title">تقييم المخاطر</div>
+                <div class="concept-desc">عملية تحديد وتحليل المخاطر وترتيب أولوياتها لضمان كفاءة الرقابة.</div>
+                <div class="accent-bar"></div>
+            </div>
+            <div class="concept-pillar">
+                <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                <div class="concept-title">توصيف المخاطر</div>
+                <div class="concept-desc">بناء ملفات (Profiles) بناءً على أنماط محددة مثل القيمة، المنشأ، أو سلوك التاجر.</div>
+                <div class="accent-bar"></div>
+            </div>
+            <div class="concept-pillar">
+                <div class="icon-box"><i class="fas fa-crosshairs"></i></div>
+                <div class="concept-title">الاستهداف</div>
+                <div class="concept-desc">اختيار شحنات محددة للتدخل بناءً على نتائج التقييم ومعلومات الاستخبارات.</div>
+                <div class="accent-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

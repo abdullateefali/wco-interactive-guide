@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .ops-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .op-card {
+            background-color: #FFFFFF;
+            border-top: 10px solid #1E3A8A;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            min-height: 220px;
+        }
+        .op-icon {
+            font-size: 50px;
+            color: #B45309;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        .op-content {
+            flex: 1;
+        }
+        .op-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 15px;
+        }
+        .op-desc {
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>العمليات اليومية في مركز الاستهداف</h2>
+        </div>
+        <div class="ops-grid">
+            <div class="op-card">
+                <div class="op-icon"><i class="fas fa-desktop"></i></div>
+                <div class="op-content">
+                    <div class="op-title">فرز المنافيست المسبق</div>
+                    <div class="op-desc">مراجعة بيانات الشحن الواردة قبل وصول السفن/الطائرات لتحديد الشحنات المشبوهة مبكراً.</div>
+                </div>
+            </div>
+            <div class="op-card">
+                <div class="op-icon"><i class="fas fa-chart-bar"></i></div>
+                <div class="op-content">
+                    <div class="op-title">مراقبة أداء القواعد</div>
+                    <div class="op-desc">تحليل نتائج الاستهداف اليومية للتأكد من فعالية القواعد النشطة وتعديلها عند الحاجة.</div>
+                </div>
+            </div>
+            <div class="op-card">
+                <div class="op-icon"><i class="fas fa-user-secret"></i></div>
+                <div class="op-content">
+                    <div class="op-title">دمج المعلومات الاستخباراتية</div>
+                    <div class="op-desc">استقبال التنبيهات الأمنية ودمجها فوراً في محرك المخاطر لضمان الاستجابة السريعة للتهديدات.</div>
+                </div>
+            </div>
+            <div class="op-card">
+                <div class="op-icon"><i class="fas fa-headset"></i></div>
+                <div class="op-content">
+                    <div class="op-title">التنسيق مع المنافذ</div>
+                    <div class="op-desc">التواصل المباشر مع ضباط المعاينة في الميدان لتوجيههم وتلقي نتائج الفحص الفعلي.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

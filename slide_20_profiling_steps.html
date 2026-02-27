@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8FAFC;
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 40px;
+            padding-right: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1E3A8A;
+            border-right: 10px solid #B45309;
+            padding-right: 20px;
+        }
+        .profiling-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding-right: 60px;
+            padding-left: 60px;
+            flex: 1;
+        }
+        .step-card {
+            background-color: #FFFFFF;
+            border-top: 10px solid #1E3A8A;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            min-height: 220px;
+        }
+        .step-num-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .step-num {
+            background-color: #B45309;
+            color: #FFFFFF;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .step-icon {
+            font-size: 40px;
+            color: #1E3A8A;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #1E3A8A;
+            margin-bottom: 15px;
+        }
+        .step-desc {
+            font-size: 22px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>خطوات بناء ملفات المخاطر (Profiling)</h2>
+        </div>
+        <div class="profiling-grid">
+            <div class="step-card">
+                <div class="step-num-box">
+                    <div class="step-num">01</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">تحديد مجال الخطر</div>
+                    <div class="step-desc">تحديد نوع الخطر المستهدف (تهريب، تهرب ضريبي، أمن) والسلع أو المسارات المرتبطة به.</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-num-box">
+                    <div class="step-num">02</div>
+                    <div class="step-icon"><i class="fas fa-database"></i></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">استخراج البيانات</div>
+                    <div class="step-desc">جمع كافة البيانات التاريخية المتعلقة بالمجال المحدد من الأنظمة الجمركية والمصادر الخارجية.</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-num-box">
+                    <div class="step-num">03</div>
+                    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">تحليل الأنماط</div>
+                    <div class="step-desc">استخدام التقنيات الإحصائية لتحديد الخصائص المشتركة للشحنات المخالفة (المنشأ، المصدر، القيمة).</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-num-box">
+                    <div class="step-num">04</div>
+                    <div class="step-icon"><i class="fas fa-cogs"></i></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">صياغة القاعدة</div>
+                    <div class="step-desc">تحويل نتائج التحليل إلى قاعدة استهداف آلية (Targeting Rule) يتم إدراجها في محرك المخاطر.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
